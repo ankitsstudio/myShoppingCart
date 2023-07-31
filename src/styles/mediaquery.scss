@@ -1,0 +1,44 @@
+@import "colors";
+
+@media screen and (max-width:820px){
+    .cart{
+        grid-template-columns: 1fr;
+    
+        >aside{
+            padding: 2rem;
+            border-radius: 0%;
+            >h2{
+                font:100 1.2rem "Roboto";
+            }
+        }
+    }
+    .cartItem{
+        display: flex;
+        flex-direction: column;
+        >img{
+            width: 80%;
+            height: 140px;
+        }
+        h3,p{
+            margin-bottom: 0.5rem;
+        }
+        >div{ 
+            height: 24%;
+            border-radius: 8px;
+            button{
+               width: 20px;
+               height: 20px;
+               border-radius: 4px;
+               margin: 16px;
+            }
+            p{
+                width: 20px;
+               height: 20px; 
+            }
+        }
+        >svg{
+            font-size: 1.2rem;
+            margin-top: 12px;
+        }
+    }    
+}
